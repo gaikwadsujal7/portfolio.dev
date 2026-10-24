@@ -1,0 +1,95 @@
+/* ==================== RESET ==================== */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    line-height: 1.5;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* ==================== MEDIA ==================== */
+
+img,
+picture,
+svg,
+video,
+canvas {
+    display: block;
+    max-width: 100%;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* ==================== LINKS ==================== */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* ==================== BUTTONS & FORMS ==================== */
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+
+button {
+    border: 0;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+
+/* ==================== LISTS ==================== */
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+/* ==================== CONTAINER ==================== */
+
+.container {
+    width: min(92%, var(--container));
+    margin-inline: auto;
+}
+
+
+/* ==================== SELECTION ==================== */
+
+::selection {
+    background: var(--primary);
+    color: var(--white);
+}
+
